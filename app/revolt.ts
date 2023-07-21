@@ -87,7 +87,7 @@ async function formatMessage(revolt: RevoltClient, message: Message) {
               process.env.REVOLT_ATTACHMENT_URL || "https://autumn.revolt.chat";
             emojiUrl = `${REVOLT_ATTACHMENT_URL}/emojis/${encodeURIComponent(
               emojiId
-            )}/?width=32&quality=lossless`;
+            )}/?quality=lossless`;
             content = content.replace(emoji, emojiUrl);
           }
         }
